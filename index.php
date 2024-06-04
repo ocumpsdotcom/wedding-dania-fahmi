@@ -366,7 +366,7 @@ if(isset($_POST["saveComment"])){
                 ?>
             <div class="flex ml-[30px] mt-[40px]">
                 <div class="text-uppercase profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]"><?= $acronym; ?></div>
-                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold"><?=$comment['name_user']?> -  <div class="badge badge-xs rounded-pill bg-primary"> <?=$comment['status_user']?> </div><br><p class="text-[11px]">02 December 2024 16:00</p></h4>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold"><?=$comment['name_user']?> -  <div class="badge badge-xs rounded-pill bg-primary"> <?=$comment['status_user']?> </div><br><p class="text-[11px]"><?=date('j F Y H:i', strtotime($comment['created_at'])) ?></p></h4>
             </div>
             <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]"><?=$comment['comment']?></p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
