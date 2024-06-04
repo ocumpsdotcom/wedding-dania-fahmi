@@ -330,7 +330,7 @@ if(isset($_POST["saveComment"])){
 
         <div class="container p-4 ">
             <div class="row g-3">
-                <p class="text-center text-grey">Isi form dibawah ini untuk melakukan konfirmasi keharidan</p>
+                <p class="text-center text-grey">Isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
                 <form action="" method="POST" enctype="multipart/form-data">
                     <div class="col-12 col-md-4 mb-3">
                         <label for="name_user" class="text-grey">Nama :</label>
